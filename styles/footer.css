@@ -1,0 +1,28 @@
+html,
+body,
+ul,
+li,
+button,
+input,
+textarea {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.footer {
+  height: 360px;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: end;
+      align-content: end;
+  background-image: url(../images/footer.jpg);
+  background-size: cover;
+  background-position: center; }
+  .footer__logo {
+    margin-bottom: 40px; }
+
+/*# sourceMappingURL=footer.css.map */
