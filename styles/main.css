@@ -21,7 +21,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 144%; }
+  line-height: 169%; }
 
 a {
   color: #0075ff;
@@ -38,12 +38,15 @@ h1 {
   font-size: 48px;
   line-height: 100%;
   letter-spacing: -1.5px; }
+  @media screen and (max-width: 1024px) {
+    h1 {
+      font-size: 36px; } }
 
 h2 {
   margin: 0;
   font-weight: bold;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 125%;
   color: #0075ff; }
 
 html,
@@ -67,6 +70,9 @@ li {
   background-image: url(../images/header.jpg);
   background-size: cover;
   background-position: center; }
+  @media screen and (max-width: 1024px) {
+    .header {
+      height: 550px; } }
   .header__inner {
     display: grid;
     grid-template-rows: 125px auto 120px;
@@ -86,6 +92,9 @@ li {
     height: 75px;
     padding: 25px 0;
     text-transform: uppercase; }
+    @media screen and (max-width: 1024px) {
+      .header__top-line {
+        height: 48px; } }
   .header__logo {
     height: 75px; }
     @media screen and (max-width: 1024px) {
@@ -147,6 +156,12 @@ li {
     line-height: 100%;
     letter-spacing: -1.5px;
     color: #fff; }
+    @media screen and (max-width: 1024px) {
+      .header__site-name {
+        max-width: 280px;
+        font-size: 46px;
+        line-height: 40px;
+        letter-spacing: -1px; } }
     .header__site-name::before {
       content: "";
       display: block;
@@ -266,6 +281,21 @@ li {
         color: #fff; } }
     .nav__link:hover {
       text-decoration: none; }
+  .nav__addition {
+    display: none; }
+    @media screen and (max-width: 1024px) {
+      .nav__addition {
+        display: block;
+        margin-top: 16px; } }
+  .nav__addition-link {
+    display: block;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff; }
 
 html,
 body,
@@ -328,6 +358,9 @@ li {
 
 .main {
   margin-top: 104px; }
+  @media screen and (max-width: 1024px) {
+    .main {
+      margin-top: 64px; } }
 
 .container {
   position: relative;
