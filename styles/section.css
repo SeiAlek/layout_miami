@@ -4,12 +4,14 @@
   -webkit-column-gap: 200px;
      -moz-column-gap: 200px;
           column-gap: 200px;
-  row-gap: 75px; }
+  row-gap: 75px;
+  padding-top: 100px; }
   @media screen and (max-width: 1024px) {
     .section {
       -webkit-column-gap: 100px;
          -moz-column-gap: 100px;
-              column-gap: 100px; } }
+              column-gap: 100px;
+      padding-top: 60px; } }
   @media screen and (max-width: 768px) {
     .section {
       grid-template-columns: 1fr;
@@ -28,7 +30,7 @@
     color: #000; }
     .section__title::after {
       content: "";
-      margin: 8px auto 75px;
+      margin: 8px auto 0;
       display: block;
       height: 16px;
       width: 23px;
@@ -41,7 +43,6 @@
           margin-bottom: 30px; } }
   .section__header {
     grid-column: 1;
-    grid-row: 1 / 3;
     margin-bottom: 48px; }
   .section__sub-header {
     font-weight: bold;
