@@ -52,6 +52,7 @@
       top: 0;
       bottom: 0;
       background: #fff;
+      border-radius: 8px;
       opacity: 0.1; }
       @media screen and (max-width: 1024px) {
         .nav__item--active::before {

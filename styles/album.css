@@ -10,8 +10,11 @@
             order: 2; }
   .album__header {
     display: inline; }
-  .album__descr::before {
-    content: " / "; }
+  .album__address {
+    display: inline;
+    font-style: normal; }
+    .album__address::before {
+      content: " / "; }
   .album__images {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;

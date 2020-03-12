@@ -1,36 +1,69 @@
-.section__header {
-  font-weight: bold;
-  font-size: 48px;
-  text-align: center;
-  line-height: 100%;
-  letter-spacing: -1.5px;
-  color: #000; }
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 200px;
+     -moz-column-gap: 200px;
+          column-gap: 200px; }
   @media screen and (max-width: 1024px) {
-    .section__header {
-      font-size: 36px; } }
-  .section__header::after {
-    content: "";
-    display: block;
-    height: 16px;
-    width: 23px;
-    margin: 8px auto 75px;
-    background-image: url(../images/crown.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    @media screen and (max-width: 1024px) {
-      .section__header::after {
-        margin-bottom: 30px; } }
-
-.section__button {
-  width: 188px;
-  margin: 40px auto 0; }
+    .section {
+      -webkit-column-gap: 100px;
+         -moz-column-gap: 100px;
+              column-gap: 100px; } }
   @media screen and (max-width: 768px) {
-    .section__button {
-      width: 100%;
-      margin-top: 32px; } }
-
-.section__button-wide {
-  width: 100%; }
+    .section {
+      grid-template-columns: 1fr;
+      row-gap: 32px; } }
+  .section--info {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px; }
+    @media screen and (max-width: 1024px) {
+      .section--info {
+        display: block; } }
+  .section--wide {
+    grid-template-columns: 1fr; }
+  .section__title {
+    grid-column: 1 / -1;
+    margin-bottom: 75px;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    color: #000; }
+    @media screen and (max-width: 1024px) {
+      .section__title {
+        font-size: 36px; } }
+    .section__title::after {
+      content: "";
+      display: block;
+      height: 16px;
+      width: 23px;
+      margin: 8px auto 75px;
+      background-image: url(../images/crown.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      @media screen and (max-width: 1024px) {
+        .section__title::after {
+          margin-bottom: 30px; } }
+  .section__header {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    margin-bottom: 48px; }
+  .section__sub-header {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #0075ff; }
+  .section__button {
+    width: 188px;
+    margin: 40px auto 0; }
+    @media screen and (max-width: 768px) {
+      .section__button {
+        width: 100%;
+        margin-top: 32px; } }
+  .section__button-wide {
+    width: 100%; }
 
 /*# sourceMappingURL=section.css.map */
