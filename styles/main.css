@@ -466,9 +466,9 @@ h3 {
     border-radius: 8px;
     outline: transparent; }
     .form__field:focus {
-      color: #333;
-      background-color: #f7f8ff;
-      border-color: #0075ff; }
+      color: #0075ff;
+      -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+              box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46); }
   .form__textarea {
     resize: none;
     overflow: auto; }
