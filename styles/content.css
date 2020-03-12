@@ -1,16 +1,3 @@
-html,
-body,
-ul,
-li,
-button,
-input,
-textarea {
-  margin: 0;
-  padding: 0; }
-
-li {
-  list-style: none; }
-
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;

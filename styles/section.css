@@ -1,0 +1,36 @@
+.section__header {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  color: #000; }
+  @media screen and (max-width: 1024px) {
+    .section__header {
+      font-size: 36px; } }
+  .section__header::after {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 23px;
+    margin: 8px auto 75px;
+    background-image: url(../images/crown.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media screen and (max-width: 1024px) {
+      .section__header::after {
+        margin-bottom: 30px; } }
+
+.section__button {
+  width: 188px;
+  margin: 40px auto 0; }
+  @media screen and (max-width: 768px) {
+    .section__button {
+      width: 100%;
+      margin-top: 32px; } }
+
+.section__button-wide {
+  width: 100%; }
+
+/*# sourceMappingURL=section.css.map */
