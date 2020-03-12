@@ -41,7 +41,7 @@
         padding: 0;
         font-weight: bold;
         font-size: 22px;
-        line-height: 22px;
+        line-height: 100%;
         color: #fff; } }
     .nav__item--active::before {
       content: "";
@@ -68,7 +68,7 @@
       .nav__link {
         font-weight: bold;
         font-size: 22px;
-        line-height: 22px;
+        line-height: 100%;
         color: #fff; } }
     .nav__link:hover {
       text-decoration: none; }
