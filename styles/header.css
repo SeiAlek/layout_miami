@@ -1,11 +1,14 @@
 .header {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -640px;
   height: 700px;
   font-size: 12px;
   line-height: 133%;
   background-image: url(../images/header.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  z-index: 14; }
   @media screen and (max-width: 1024px) {
     .header {
       height: 550px; } }
@@ -16,6 +19,9 @@
     height: 100%;
     margin: 0 auto;
     padding: 0 150px; }
+    @media screen and (max-width: 1024px) {
+      .header__inner {
+        padding: 0 20px; } }
   .header__top-line {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -83,8 +89,8 @@
     background-image: url(../images/close.svg);
     z-index: 20; }
   .header__site-name {
-    -ms-flex-item-align: end;
-        align-self: end;
+    grid-row: auto;
+    align-self: end;
     max-width: 340px;
     margin: 40px 0;
     font-weight: 700;
@@ -94,7 +100,9 @@
     color: #fff; }
     @media screen and (max-width: 1024px) {
       .header__site-name {
+        grid-row: span 2;
         max-width: 280px;
+        margin-bottom: 80px;
         font-size: 46px;
         line-height: 40px;
         letter-spacing: -1px; } }
