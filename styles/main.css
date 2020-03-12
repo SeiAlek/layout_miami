@@ -46,9 +46,12 @@ h1 {
 h2 {
   margin: 0;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 48px;
   line-height: 125%;
   color: #0075ff; }
+  @media screen and (max-width: 1024px) {
+    h2 {
+      font-size: 36px; } }
 
 h3 {
   margin: 0;
@@ -327,7 +330,8 @@ h3 {
   grid-template-columns: 1fr 1fr;
   -webkit-column-gap: 200px;
      -moz-column-gap: 200px;
-          column-gap: 200px; }
+          column-gap: 200px;
+  row-gap: 75px; }
   @media screen and (max-width: 1024px) {
     .section {
       -webkit-column-gap: 100px;
@@ -341,29 +345,20 @@ h3 {
     -webkit-column-gap: 20px;
        -moz-column-gap: 20px;
             column-gap: 20px; }
-    @media screen and (max-width: 1024px) {
-      .section--info {
-        display: block; } }
   .section--wide {
     grid-template-columns: 1fr; }
   .section__title {
     grid-column: 1 / -1;
-    margin-bottom: 75px;
-    font-weight: bold;
-    font-size: 48px;
     text-align: center;
     line-height: 100%;
     letter-spacing: -1.5px;
     color: #000; }
-    @media screen and (max-width: 1024px) {
-      .section__title {
-        font-size: 36px; } }
     .section__title::after {
       content: "";
+      margin: 8px auto 75px;
       display: block;
       height: 16px;
       width: 23px;
-      margin: 8px auto 75px;
       background-image: url(../images/crown.svg);
       background-position: center;
       background-repeat: no-repeat;
@@ -387,8 +382,6 @@ h3 {
       .section__button {
         width: 100%;
         margin-top: 32px; } }
-  .section__button-wide {
-    width: 100%; }
 
 .gallery__list {
   display: grid;
@@ -423,7 +416,11 @@ h3 {
     -webkit-column-gap: 20px;
        -moz-column-gap: 20px;
             column-gap: 20px;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 256px; }
+    @media screen and (max-width: 768px) {
+      .album__images {
+        grid-template-rows: 1fr; } }
     .album__images--two-one {
       grid-template-columns: 2fr 1fr; }
       @media screen and (max-width: 768px) {
@@ -436,13 +433,9 @@ h3 {
           grid-template-columns: 1fr 1fr; } }
   .album__image-link {
     display: block;
-    height: 256px;
+    height: 100%;
     border-radius: 8px;
     overflow: hidden; }
-    @media screen and (max-width: 768px) {
-      .album__image-link {
-        height: calc((100vw - 60px) / 2);
-        width: calc((100vw - 60px) / 2); } }
   .album__image {
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
@@ -485,7 +478,7 @@ h3 {
 
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 240px));
+  grid-template-columns: repeat(3, 240px);
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
@@ -495,7 +488,7 @@ h3 {
           justify-content: space-between; }
   @media screen and (max-width: 768px) {
     .testimonials {
-      grid-template-columns: minmax(200px, 280px);
+      grid-template-columns: 280px;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
@@ -508,8 +501,8 @@ h3 {
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
     display: block;
-    width: 153px;
-    height: 153px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
     border-radius: 50%;
     overflow: hidden; }
