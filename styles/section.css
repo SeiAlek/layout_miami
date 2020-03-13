@@ -52,7 +52,7 @@
   .section__button {
     width: 188px;
     margin: 40px auto 0; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .section__button {
         width: 100%;
         margin-top: 32px; } }

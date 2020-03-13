@@ -17,6 +17,9 @@ textarea {
 li {
   list-style: none; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -395,7 +398,7 @@ h3 {
   .section__button {
     width: 188px;
     margin: 40px auto 0; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .section__button {
         width: 100%;
         margin-top: 32px; } }
