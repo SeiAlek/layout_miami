@@ -277,7 +277,12 @@ h3 {
         padding: 0; } }
   .nav__item--active {
     position: relative;
-    padding: 8px 24px; }
+    padding: 8px 24px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); }
+    @media screen and (max-width: 1024px) {
+      .nav__item--active {
+        background-color: none; } }
     @media screen and (max-width: 1024px) {
       .nav__item--active {
         padding: 0;
@@ -285,20 +290,6 @@ h3 {
         font-size: 22px;
         line-height: 100%;
         color: #fff; } }
-    .nav__item--active::before {
-      content: "";
-      position: absolute;
-      display: block;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background: #fff;
-      border-radius: 8px;
-      opacity: 0.1; }
-      @media screen and (max-width: 1024px) {
-        .nav__item--active::before {
-          display: none; } }
   .nav__link {
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
