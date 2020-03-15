@@ -11,11 +11,11 @@
     font-size: 14px;
     line-height: 100%;
     border-radius: 8px;
-    outline: transparent; }
+    outline: none; }
     .form__field:focus {
-      color: #0075ff;
       -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
-              box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46); }
+              box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+      color: #0075ff; }
   .form__textarea {
     resize: none;
     overflow: auto; }

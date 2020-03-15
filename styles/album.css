@@ -43,6 +43,9 @@
     height: 100%;
     border-radius: 8px;
     overflow: hidden; }
+    .album__image-link:hover, .album__image-link:focus {
+      -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+              box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46); }
   .album__image {
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;

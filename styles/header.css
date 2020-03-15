@@ -53,7 +53,8 @@
     border-bottom: 1px solid transparent; }
     .header__link:hover {
       border-color: #fff; }
-    .header__link:hover {
+    .header__link:hover, .header__link:focus {
+      border-color: #fff;
       text-decoration: none; }
     @media screen and (max-width: 1024px) {
       .header__link span {
@@ -66,6 +67,13 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; } }
+  .header__phone:hover {
+    text-decoration: none;
+    border-color: transparent; }
+  .header__phone:focus {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    border-color: transparent; }
   @media screen and (max-width: 1024px) {
     .header__call-to-action {
       display: none; } }
@@ -77,7 +85,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
-    border: 0; }
+    border: 0;
+    outline: none; }
+    .header__nav-button:focus {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+      border-color: transparent; }
   .header__nav-open {
     background-image: url(../images/menu.svg); }
     @media screen and (max-width: 1024px) {

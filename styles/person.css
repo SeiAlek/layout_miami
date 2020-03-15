@@ -14,6 +14,9 @@
     .person__photo-link:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
+    .person__photo-link:hover, .person__photo-link:focus {
+      -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+              box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46); }
   .person__photo {
     width: 100%;
     -o-object-fit: cover;
