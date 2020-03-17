@@ -195,26 +195,24 @@ h3 {
     display: none;
     height: 18px;
     width: 18px;
+    background-image: url(../images/menu.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
     border: 0;
-    outline: none; }
+    outline: none;
+    z-index: 100; }
+    @media screen and (max-width: 1024px) {
+      .header__nav-button {
+        display: block; }
+        .header__nav-button--close {
+          display: block;
+          background-image: url(../images/close.svg); } }
     .header__nav-button:focus {
       -webkit-transform: scale(1.5);
               transform: scale(1.5);
       border-color: transparent; }
-  .header__nav-open {
-    background-image: url(../images/menu.svg); }
-    @media screen and (max-width: 1024px) {
-      .header__nav-open {
-        display: block; } }
-  .header__nav-close {
-    position: relative;
-    display: none;
-    background-image: url(../images/close.svg);
-    z-index: 20; }
   .header__site-name {
     grid-row: auto;
     align-self: end;
@@ -265,7 +263,11 @@ h3 {
           box-sizing: border-box;
   -ms-flex-item-align: center;
       align-self: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; }
   @media screen and (max-width: 1024px) {
     .nav {
       position: absolute;
@@ -276,6 +278,10 @@ h3 {
       background-color: #0075ff;
       padding: 120px 21px;
       z-index: 10; } }
+  @media screen and (max-width: 1024px) {
+    .nav--show {
+      -webkit-transform: translateY(550px);
+              transform: translateY(550px); } }
   .nav__list {
     display: grid;
     grid-auto-flow: column;
@@ -341,20 +347,6 @@ h3 {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #fff; }
-  .nav__show {
-    -webkit-transform: translateY(550px);
-            transform: translateY(550px);
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s; }
-  .nav__hide {
-    -webkit-transform: translateY(-550px);
-            transform: translateY(-550px);
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s; }
 
 .section {
   display: grid;
